@@ -2,8 +2,9 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack'
 import { View, Text, StyleSheet, Image, ScrollView } from 'react-native'
 import { theme } from '../constants/theme'
 import { LoginStackParamList } from '../types/navigation'
-import logoDark from '../../assets/logo-juet-dark.png'
-import logo from '../../assets/logo-juet.png'
+import logoDark from '../../assets/logo-dark.png'
+import logo from '../../assets/logo.png'
+import { config } from '../../config'
 
 export type Props = NativeStackScreenProps<LoginStackParamList, 'ForgotPasswordEmailSent'>
 
@@ -42,8 +43,8 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
   image: {
-    width:90,
-    height: 90,
+    width: config.logoWidth,
+    height: config.logoWidth * config.logoSizeRatio,
     marginBottom: 96,
   },
 }

@@ -1,11 +1,13 @@
 import { View, Text, ScrollView, TextInput, StyleSheet, ActivityIndicator, Image } from 'react-native'
 import { useState } from 'react'
-import logo from '../../assets/logo-juet-dark.png'
+import logoDark from '../../assets/logo-dark.png'
+import logo from '../../assets/logo.png'
 import { theme } from '../constants/theme'
 import { LoginStackParamList } from '../types/navigation'
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
 import { storefrontApiClient } from '../utils/storefrontApiClient'
 import FillButton from '../components/shared/FillButton'
+import { config } from '../../config'
 
 export type Props = NativeStackScreenProps<LoginStackParamList, 'ForgotPassword'>
 
@@ -54,7 +56,7 @@ const ForgotPassword = ({navigation}: Props) => {
   return (
     <ScrollView scrollEnabled={false}>
       <View style={styles.container} >
-        <Image source={logo} style={styles.image}/>
+        <Image source={theme.dark == true ? logoDark : logo} style={styles.image}/>
 
         {/* { errorMessageStatus ?
           <View style={{height:32}}>
@@ -108,8 +110,8 @@ const styles = StyleSheet.create({
       color: theme.colors.text
     },
     image: {
-      width:90,
-      height: 90,
+      width: config.logoWidth,
+      height: config.logoWidth * config.logoSizeRatio,
       marginBottom: 48,
     },
     input: {

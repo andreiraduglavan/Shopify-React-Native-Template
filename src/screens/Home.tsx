@@ -2,12 +2,13 @@ import { View, Text, StyleSheet, Image, Dimensions, TouchableWithoutFeedback, Fl
 import { useEffect, useState } from 'react'
 import { hasHomeIndicator, theme } from '../constants/theme'
 import { storefrontApiClient } from '../utils/storefrontApiClient'
-import logoDark from '../../assets/logo-juet-dark.png'
-import logo from '../../assets/logo-juet.png'
+import logoDark from '../../assets/logo-dark.png'
+import logo from '../../assets/logo.png'
 import SubscribeComponent from '../components/home/SubscribeComponent'
 import { HomeStackParamList } from '../types/navigation'
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
 import { useAuthContext } from '../context/AuthContext'
+import { config } from '../../config'
 
 const windowHeight = Dimensions.get('window').height-50-(hasHomeIndicator ? 30 : 0)
 
@@ -105,8 +106,8 @@ const styles = StyleSheet.create({
     backgroundColor:'transparent',
     position: 'absolute',
     resizeMode:'contain',
-    width: 100,
-    height: 100,
+    width: config.logoWidth,
+    height: config.logoWidth * config.logoSizeRatio,
     top:72,
     left:24
   }

@@ -1,10 +1,12 @@
+import { config } from "../../config"
+
 export const storefrontApiClient = async (query: string, variables: any | null = null) => {
-  const URL = `https://dj-resale.myshopify.com//api/2023-01/graphql.json`
+  const URL = `${config.shopifyUrl}/api/2023-01/graphql.json`
   const options = {
     endpoint: URL,
     method: "POST",
     headers: {
-      "X-Shopify-Storefront-Access-Token": 'ea87d0aa34620e4b1034509b2f40d4d8',
+      "X-Shopify-Storefront-Access-Token": config.shopifyStorefrontAccessToken,
       "Accept": "application/json",
       "Content-Type": "application/json",
     },

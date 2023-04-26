@@ -7,7 +7,7 @@ import MainNavigator from './src/screens/MainNavigator'
 import NetInfo from '@react-native-community/netinfo'
 import { useEffect, useState } from 'react'
 import { Image, StyleSheet, Text, View } from 'react-native'
-import noNetworkCloud from './assets/Screen_Shot_2023-04-12_at_16.57.10-removebg.png'
+import noNetworkCloud from './assets/storm-cloud.png'
 import { colorScheme, hasHomeIndicator, theme } from './src/constants/theme'
 import { StatusBar } from 'expo-status-bar'
 

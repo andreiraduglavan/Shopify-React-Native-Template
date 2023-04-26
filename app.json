@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "JUET",
-    "slug": "JUET",
+    "name": "Shopify React Native Template",
+    "slug": "shopify-react-native-template",
     "version": "1.0.3",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,24 +15,20 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.andreirhadu.JUET"
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#000000"
-      },
-      "package": "com.andreirhadu.JUET",
-      "googleServicesFile": "./google-services.json",
-      "versionCode": 3
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "ac2fae36-36c1-4974-abb2-d83b1d8fe90a"
+        "projectId": ""
       }
     },
     "updates": {

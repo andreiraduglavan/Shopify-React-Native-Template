@@ -2,10 +2,11 @@ import { View, Text, ScrollView, Image } from 'react-native'
 import React from 'react'
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
 import { LoginStackParamList } from '../types/navigation'
-import logoDark from '../../assets/logo-juet-dark.png'
-import logo from '../../assets/logo-juet.png'
+import logoDark from '../../assets/logo-dark.png'
+import logo from '../../assets/logo.png'
 import { theme } from '../constants/theme'
 import { StyleSheet } from 'react-native'
+import { config } from '../../config'
 
 export type Props = NativeStackScreenProps<LoginStackParamList, 'VerifyEmail'>;
 
@@ -45,8 +46,8 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
   image: {
-    width:90,
-    height: 90,
+    width: config.logoWidth,
+    height: config.logoWidth * config.logoSizeRatio,
     marginBottom: 48,
   },
 }

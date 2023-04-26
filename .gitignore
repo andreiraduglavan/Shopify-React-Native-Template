@@ -12,6 +12,7 @@ npm-debug.*
 web-build/
 
 eas.json
+google-services.json
 
 # macOS
 .DS_Store

@@ -1,13 +1,14 @@
 import { useRef, useState } from 'react'
 import { View, Text, KeyboardAvoidingView, Platform, ScrollView, StyleSheet, Image, ActivityIndicator, TextInput } from 'react-native'
 import { useAuthContext } from '../context/AuthContext'
-import logoDark from '../../assets/logo-juet-dark.png'
-import logo from '../../assets/logo-juet.png'
+import logoDark from '../../assets/logo-dark.png'
+import logo from '../../assets/logo.png'
 import { theme } from '../constants/theme'
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
 import { LoginStackParamList } from '../types/navigation'
 import FillButton from '../components/shared/FillButton'
 import { useNavigationContext } from '../context/NavigationContext'
+import { config } from '../../config'
 
 type Props = NativeStackScreenProps<LoginStackParamList, 'Login'>
 
@@ -118,8 +119,8 @@ const styles = StyleSheet.create({
     color: theme.colors.text
   },
   image: {
-    width:90,
-    height: 90,
+    width: config.logoWidth,
+    height: config.logoWidth * config.logoSizeRatio,
     marginBottom: 48,
   },
   input: {

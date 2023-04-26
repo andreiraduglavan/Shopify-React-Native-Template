@@ -8,6 +8,7 @@ import { ScrollView } from 'react-native-gesture-handler'
 import { useNavigationContext } from '../context/NavigationContext'
 import { useAuthContext } from '../context/AuthContext'
 import * as WebBrowser from 'expo-web-browser'
+import { config } from '../../config'
 
 type Props = NativeStackScreenProps<ProfileStackParamList, 'Profile'>
 
@@ -86,7 +87,7 @@ const Profile = ({ navigation }: Props) => {
       <View style={{marginBottom: 16}}>
         <TouchableOpacity 
           style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}
-          onPress={() => Linking.openURL('instagram://user?username=juet.ro') } 
+          onPress={() => Linking.openURL(`instagram://user?username=${config.instagramUsername}`) } 
         >
           <Text style={styles.settingTitle}>Instagram</Text>
           <Entypo name={`chevron-small-right`} size={24} color={theme.colors.infoText} />

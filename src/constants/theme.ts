@@ -1,7 +1,7 @@
 import { DarkTheme, DefaultTheme } from "@react-navigation/native"
 import { modelName } from "expo-device"
-import { StatusBar } from "expo-status-bar"
 import { Appearance, Platform } from "react-native"
+import { config } from "../../config"
 
 export const colorScheme = Appearance.getColorScheme()
 
@@ -12,7 +12,7 @@ export const theme = colorScheme == 'light' ? {
     infoText: 'rgba(0,0,0,0.67)',
     disabledText: 'rgba(0,0,0,0.33)',
     background: 'rgb(245,247,245)', 
-    primary: '#000',
+    primary: config.primaryColor,
   }
 } : {
   ...DarkTheme,
@@ -20,7 +20,7 @@ export const theme = colorScheme == 'light' ? {
     ...DarkTheme.colors,
     infoText: 'rgba(255,255,255,0.67)',
     disabledText: 'rgba(255,255,255,0.33)',
-    primary: '#FFF'
+    primary: config.primaryColorDark
   }
 }
 

@@ -4,10 +4,11 @@ import { theme } from '../constants/theme'
 import { useAuthContext } from '../context/AuthContext'
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
 import { LoginStackParamList } from '../types/navigation'
-import logoDark from '../../assets/logo-juet-dark.png'
-import logo from '../../assets/logo-juet.png'
+import logoDark from '../../assets/logo-dark.png'
+import logo from '../../assets/logo.png'
 import FillButton from '../components/shared/FillButton'
 import { useNavigationContext } from '../context/NavigationContext'
+import { config } from '../../config'
 
 type Props = NativeStackScreenProps<LoginStackParamList, 'Register'>
 
@@ -164,8 +165,8 @@ const styles = StyleSheet.create({
     marginLeft: 8
   },
   image: {
-    width:90,
-    height: 90,
+    width: config.logoWidth,
+    height: config.logoWidth * config.logoSizeRatio,
   },
   acceptsMarketingContainer: {
     flexDirection: 'row', 

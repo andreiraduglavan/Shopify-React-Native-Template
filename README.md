@@ -1,4 +1,4 @@
-# Shopify-React-Native-Template
+# Shopify React Native Template
 
 Turn your Shopify store into a mobile app. No coding required. 
 <br />

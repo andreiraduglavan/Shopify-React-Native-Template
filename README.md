@@ -18,7 +18,7 @@ Install dependencies.
 
 <code>yarn install</code>
 
-Download Expo Go app and run start the app.
+Download the Expo Go app and start the app.
 
 <code>npx expo start</code>
 

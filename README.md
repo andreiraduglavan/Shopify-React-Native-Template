@@ -11,7 +11,6 @@ https://apps.apple.com/us/app/juet/id6447695366
 
 ## Set up guide
 
-<br />
 Clone or download the repository.
 
 <code>git clone https://github.com/andreiraduglavan/Shopify-React-Native-Template.git</code>

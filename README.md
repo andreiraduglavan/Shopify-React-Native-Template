@@ -3,7 +3,7 @@
 Turn your Shopify store into a mobile app. No coding required. 
 <br />
 <br />
-<img src='./assets/logo.png' width='360' />
+<img src='./assets/mobile-app-for-shopify.png' />
 <br />
 <br />
 

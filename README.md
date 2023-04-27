@@ -17,7 +17,7 @@ Clone or download the repository.
 
 Install dependencies.
 
-<code>yarn install</code>
+<code>npm install</code>
 
 Config the <code>config.js</code> file.
 

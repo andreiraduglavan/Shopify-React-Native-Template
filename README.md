@@ -29,6 +29,7 @@ Download the Expo Go app and start the app.
 <br />
 Made with ❤️ by purplr.io.
 
+<br />
 # Shopify React Native Modèle
 
 Transformez votre boutique Shopify en application mobile. Aucun codage requis.

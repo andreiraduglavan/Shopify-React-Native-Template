@@ -29,7 +29,7 @@ Download the Expo Go app and start the app.
 <br />
 Made with ❤️ by purplr.io.
 
-<br><br><br>
+<br><br>
 
 # Shopify React Native Modèle
 
